@@ -1,6 +1,6 @@
-CC		=	c++ -Wall -Wextra -Werror -std=c++98 -g
-
 NAME	=	brain
+
+CC		=	c++ -Wall -Wextra -Werror -std=c++98 -g
 
 SRC		=	main.cpp
 
@@ -8,14 +8,14 @@ OBJ		=	$(SRC:.cpp=.o)
 
 all:	$(NAME)
 
-$(NAME):	$(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+$(NAME):$(SRC)
+	@$(CC) $(SRC) -o $(NAME)
 
 clean:
-	rm -f $(OBJ)
+	@rm -f $(OBJ)
 
 fclean:	clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re:	fclean all
 
