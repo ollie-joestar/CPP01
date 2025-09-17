@@ -1,8 +1,10 @@
-NAME	= betterSed
+NAME	= harl
 CC		= c++ -Wall -Wextra -Werror -std=c++98 -g
 
 SRC		= main.cpp \
+		  Harl.cpp
 
+HEADERS	= Harl.hpp
 OBJ		= $(SRCS:.c=.o)
 
 all: $(NAME)
