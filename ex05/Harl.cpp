@@ -42,5 +42,5 @@ void Harl::complain(std::string level) {
 			return ;
 		}
 	};
-	(this->*functions[i])();
+	 (this->*functions[i])();
 }

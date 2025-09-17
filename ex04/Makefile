@@ -3,7 +3,7 @@ CC		= c++ -Wall -Wextra -Werror -std=c++98
 
 SRC		= main.cpp \
 
-OBJ		= $(SRCS:.c=.o)
+OBJ		= $(SRCS:.cpp=.o)
 
 all: $(NAME)
 
